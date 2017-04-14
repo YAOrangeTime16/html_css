@@ -1,0 +1,11 @@
+
+# for maintenance
+gulpfile.js
+package.json
+node_modules/
+.sass-chache/
+
+# Pages not ready for uploading
+about.html
+contact.html
+plant_theames.html

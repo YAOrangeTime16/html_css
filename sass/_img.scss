@@ -1,0 +1,29 @@
+.top_img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: $pink;
+    background-image: url('../images/green2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home_img {
+    background-image: url('../images/branch-l.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 65rem;
+    position: relative;
+    h2 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 960px){
+    .home_img {
+        background-image: url('../images/branch-s.png');
+        height: 100%;
+    }
+}

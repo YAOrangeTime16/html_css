@@ -1,0 +1,223 @@
+@import "variables";
+@import "img";
+@import "mixin";
+    
+html, body, header {
+    width: 100%;
+    height: 100%;
+    font-size:62.5%;
+    margin: 0;
+    font-family: "Open Sans";
+    font-weight: 200;
+}
+
+header {
+    color: $white;
+}
+
+
+div {
+    margin: 0;
+}
+
+h1 {
+    font-size: $font-ll;
+    font-weight: 400;
+    margin: 0;
+}
+
+h2 {
+    font-size: $font-l;
+    font-weight: 300;
+}
+
+nav {
+    background-color: $pink;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+@include screen-max($tablet){
+    ul {
+        flex-direction: column;
+    }
+}
+
+li {
+    display: inline-block;
+    list-style: none;
+    font-size: $font-m;
+    line-height: 3.8rem;
+    padding: 1rem 3rem;
+    margin: 0 2rem;
+}
+
+footer {
+    text-align: center;
+    background-color: $pink;
+    height: 7rem;
+    line-height: 7rem;
+    font-size: $font-s;
+    color: $white;
+    margin: 0;
+}
+@include screen-max($tablet){
+    position: fixed;
+    bottom: 0;
+}
+
+@include screen-max($tablet){
+    .hide {
+        display: none;
+    }
+}
+
+.logo-div{
+    position: absolute;
+    left: 3rem;
+    margin-top: 3rem;
+}
+
+.logo {
+    display: inline-block;
+    width: 15rem;
+    height: auto;
+}
+
+@include screen-max($tablet){
+    .logo-div{
+        width: 100%;
+        left: 0;
+        text-align: center;
+        margin-top: 0;
+    }
+    .logo{
+        width: 50%;
+    }
+}
+
+.top-title {
+    font-family: $courgette;
+    display: inline-block;
+    line-height: 60rem;
+}
+
+@include screen-max($tablet){
+    .top-title {
+        font-size: $font-l;
+        line-height: 5rem;
+        text-align: center;
+        margin-bottom: 25rem;
+    }
+}
+
+.flex_container {
+    display: flex;
+    justify-content: center;
+    
+    .op > p {
+            padding: 1rem;
+            display: inline-block;
+            z-index: 2;
+            line-height: 2.4rem;
+            position: relative;
+            color: $white;
+            font-weight: 400;
+            top: 8rem;
+    }
+}
+
+.op, .div1, .div2, .div3 {
+    font-size: $font-m;
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.op {
+    background-color:  rgba(120, 217, 200, 0.6);
+    transition: .3s;
+	opacity: 0;
+    z-index: 3;
+}
+
+@include screen-max($tablet){
+    .op {
+        border-radius: 0;
+    }
+}
+
+.section-title {
+    font-size: $font-m;
+    padding: 0.5rem 2rem;
+    line-height:4rem;
+}
+
+.div2:hover .op, .div3:hover .op, .div1:hover .op {
+    opacity: 1;
+}
+
+.div1, .div2, .div3 {
+    position: absolute;
+}
+
+.div1 {
+    left: 10rem;
+    top: 24rem;
+    background-image: url('../images/office1-480px.jpg');
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.div2 {
+    background-image: url('../images/office1-480px.jpg');
+    background-repeat: no-repeat;
+    overflow: hidden;
+    left: 53rem;
+    top: 10rem;
+}
+
+.div3 {
+    top: 24rem;
+    right: 10rem;
+    background-image: url('../images/office1-480px.jpg');
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+@include screen-max($tablet){
+    .flex_container {
+        flex-direction: column;
+        .div1, .div2, .div3 {
+            width: 80%;
+            height: auto;
+            border-radius: 0;
+            margin: 2rem auto;
+        }
+    }
+    .div1, .div2, .div3 {
+        position: relative;
+    }
+    .div1 {
+        left: 0;
+        top: auto;
+    }
+
+    .div2 {
+        left: 0;
+        top: auto;
+    }
+
+    .div3 {
+        right: 0;
+        top: auto;
+    }
+}
