@@ -1,5 +1,4 @@
-
-# for maintenance
+# maintenance
 gulpfile.js
 package.json
 node_modules/
@@ -9,3 +8,4 @@ node_modules/
 about.html
 contact.html
 plant_theames.html
+pricing.html
