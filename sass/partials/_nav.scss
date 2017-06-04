@@ -1,0 +1,66 @@
+/*======================
+   NAVIGATION MENU
+========================*/
+.menu-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.anc-menu{
+    color: $main-color;
+    font-weight: 100;
+    text-shadow: 0.8px 0.8px 1px $dark-green;
+}
+
+
+.menu-nav{
+    height: 3.5rem;
+    li {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+}
+
+.mobile-menu {
+    visibility:hidden;
+}
+
+
+@include screen-max($tablet){
+    .menu-nav {
+    flex-direction: column;
+}
+    .mobile-menu{
+        visibility: visible;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+    .mobile-menu-sub{
+        position: relative;
+        top: 28rem;
+        margin: 0;
+        padding: 2rem 0 2rem 5rem;
+        z-index: 1;
+    }
+}
+
+@include screen-max($tablet){
+    .hide {
+        visibility: hidden;
+        transform: rotateX(90deg);
+        transform-origin: 50% 0;
+        transition: .3s;
+    }
+    
+    .hover-show:hover{
+        .hide {
+            visibility: visible;
+            transition: all 0.3s ease-in-out;
+            transform: rotateX(0);
+            background: rgba(154, 212, 128, 0.8);
+        }
+    }  
+}

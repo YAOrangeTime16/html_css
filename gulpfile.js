@@ -3,16 +3,14 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 
-gulp.task('default', function() {
-  console.log('gulp is working');
-});
+gulp.task('default', ['sass:watch']);
 
 gulp.task('sass', function () {
-  return gulp.src('./sass/**/*.scss')
+  return gulp.src('sass/**/*.scss')
     .pipe(sass.sync().on('error', sass.logError))
-    .pipe(gulp.dest('./css/'));
+    .pipe(gulp.dest('css/'));
 });
  
 gulp.task('sass:watch', function () {
-  gulp.watch('./sass/**/*.scss', ['sass']);
+  gulp.watch('sass/**/*.scss', ['sass']);
 });
