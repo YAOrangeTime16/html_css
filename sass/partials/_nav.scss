@@ -34,6 +34,7 @@ nav {
 @include screen-max($tablet){
     .menu-nav {
     flex-direction: column;
+        
 }
     .mobile-menu{
         visibility: visible;
@@ -61,6 +62,9 @@ nav {
     }
     
     .hover-show:hover{
+        .mobile-menu {
+            display: none;
+        }
         .hide {
             visibility: visible;
             transition: all 0.3s ease-in-out;

@@ -23,26 +23,6 @@
   background-attachment: fixed; }
 
 /*======================
-   LOGO
-========================*/
-.logo-div {
-  position: absolute;
-  top: 0.5rem;
-  left: 1rem; }
-
-.logo {
-  display: block;
-  width: 80px;
-  height: auto; }
-
-@media screen and (max-width: 960px) {
-  .logo {
-    width: 50px; }
-  .logo-div {
-    position: absolute;
-    top: 0; } }
-
-/*======================
    NAVIGATION MENU
 ========================*/
 nav {
@@ -90,6 +70,8 @@ nav {
     transform: rotateX(90deg);
     transform-origin: 50% 0;
     transition: .3s; }
+  .hover-show:hover .mobile-menu {
+    display: none; }
   .hover-show:hover .hide {
     visibility: visible;
     transition: all 0.3s ease-in-out;
