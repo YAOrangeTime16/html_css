@@ -15,6 +15,13 @@
   background: url("../images/office-480px.jpg") no-repeat center;
   overflow: hidden; }
 
+.header-nav-img {
+  background-image: url("../images/flower4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed; }
+
 /*======================
    LOGO
 ========================*/
@@ -38,13 +45,16 @@
 /*======================
    NAVIGATION MENU
 ========================*/
+nav {
+  z-index: 50; }
+
 .menu-nav {
   display: flex;
   flex-direction: row;
   justify-content: flex-end; }
 
 .anc-menu {
-  color: #9ad480;
+  color: white;
   font-weight: 100;
   text-shadow: 0.8px 0.8px 1px #002400; }
 
@@ -68,7 +78,8 @@
     z-index: 2; }
   .mobile-menu-sub {
     position: relative;
-    top: 28rem;
+    left: -1em;
+    top: 23rem;
     margin: 0;
     padding: 2rem 0 2rem 5rem;
     z-index: 1; } }
@@ -110,9 +121,9 @@ footer {
   justify-content: center; }
 
 .top-title {
-  font-family: "Courgette", cursive;
+  font-family: "Alice", serif;
   display: block;
-  margin: 25rem 0 0 2rem;
+  margin: 5em 0 0 2rem;
   text-shadow: 1px 1px 2px #002400; }
 
 @media screen and (max-width: 960px) {
@@ -120,14 +131,31 @@ footer {
     font-size: 3.6rem;
     line-height: 5rem;
     text-align: center;
-    margin-top: 0;
+    margin-top: 3em;
     margin-bottom: 0; } }
 
-html, body, header {
+.head {
+  height: 35rem;
+  width: 100%; }
+
+.page-title {
+  position: relative;
+  top: -3em;
+  padding-left: 1em;
+  color: white;
+  text-shadow: 0.5px 0.5px 1px black; }
+
+@media screen and (max-width: 960px) {
+  .page-title {
+    padding: 0;
+    text-align: center; } }
+
+html, body, .index-header {
   width: 100%;
   height: 100%;
   font-size: 62.5%;
-  font-weight: 200; }
+  font-weight: 200;
+  font-family: "Dosis", sans-serif; }
 
 header {
   color: #fff; }
@@ -141,8 +169,13 @@ h1 {
   margin: 0; }
 
 h2 {
+  font-family: "Dosis", sans-serif;
   font-size: 3.6rem;
   font-weight: 300; }
+
+h3 {
+  font-family: "Dosis", sans-serif;
+  font-size: 2.4rem; }
 
 nav {
   position: absolute;
@@ -178,16 +211,16 @@ li {
     position: relative;
     color: #fff;
     font-weight: 400;
-    top: 8rem; }
+    top: 5rem; }
 
 .parent-div {
   height: auto;
-  padding: 3rem 0; }
+  margin: 0 0 5em 0; }
 
 .op, .div1, .div2, .div3 {
   font-size: 2.4rem;
-  width: 30rem;
-  height: 30rem;
+  width: 25rem;
+  height: 25rem;
   border-radius: 50%;
   text-align: center;
   vertical-align: middle; }
@@ -239,3 +272,6 @@ li {
     left: 0; }
   .div3 {
     right: 0; } }
+
+.text-black {
+  color: #272727; }

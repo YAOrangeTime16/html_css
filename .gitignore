@@ -3,9 +3,8 @@ gulpfile.js
 package.json
 node_modules/
 .sass-chache/
+sass/
 
 # Pages not ready for uploading
 about.html
 contact.html
-plant_theames.html
-pricing.html
