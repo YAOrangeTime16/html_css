@@ -1,31 +1,32 @@
 <!DOCTYPE html>
 <html>
-     <head lang="en">
-        <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1" charset="utf-8" />
-    <!-- CSS style -->
-        <link href="main.css" rel="stylesheet" >
-    <!-- Font -->
-        <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-    <!-- Favicon -->
-        <link href="images/plantify_logo.png" rel="shortcut icon">
-        <title>Plantify | Keep your workplace fresh and oxygenated</title>
+     <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Plantify || HTML / CSS </title>
+        <link rel="stylesheet" href="css/normalize.css" type="text/css">
+        <link rel="stylesheet" href="css/main.css" type="text/css">
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Alice|Dosis:300,400,500" rel="stylesheet">
     </head>
     <body>
         <header>
-            <h1>
-            <img class="logo" src="images/plantify_logo.png" alt="logo" />Plantify
-            </h1>
             <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="plant_themes.html">Plant themes</a></li>
-                    <li><a href="pricing.html">Pricing</a></li>
+                <ul class="menu-nav hover-show">
+                    <li class="mobile-menu" ontouchstart="">MENU</li>
+                    <li class="hide mobile-menu-sub"><a class="anc-menu" href="index.html">HOME</a></li>
+                    <li class="hide mobile-menu-sub"><a class="anc-menu" href="price.html">THEMES &amp; PRICE</a></li>
+                    <li class="hide mobile-menu-sub"><a class="anc-menu" href="#">ABOUT</a></li>
+                    <li class="hide mobile-menu-sub"><a class="anc-menu" href="contact.html">CONTACT</a></li>
+                    
                 </ul>
             </nav>
+            <div class="head header-nav-img contact"></div>
+            <h2 class="page-title">Contact Information</h2>
         </header>
-            <section class="body-backg">
-                <h2>Contact</h2>
+        <main>
+            <section>
+                <h2>Address</h2>
                 <p>
                     Birger Jarlsgatan 5000<br>
                     Stockholm<br>
@@ -36,7 +37,7 @@
                     <img class="sns-icon" src="images/sns_facebook.png" alt="facebook"/>
                     <img class="sns-icon" src="images/sns_twitter.png" alt="twitter"/>
                 </figure>
-                <form class="contact-form">
+                <form>
                     <ul>
                         <li>
                             <label><input type="radio" name="gender"/>Mr.</label>
@@ -62,12 +63,10 @@
                         <li><input type="submit"/></li>
                     </ul>
                 </form>
-            </section>
+            </section>    
+        </main>
         <footer>
-            <ul>
-                <li><a href="about.html">About Us</a></li>
-                <li>Contact</li>
-            </ul>
+            Responsive Design/HTMLandCSS course: YA 2016
         </footer>
     </body>
 </html>

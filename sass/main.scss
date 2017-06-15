@@ -2,6 +2,7 @@
 @import "partials/img";
 @import "partials/mixin";
 @import "partials/nav";
+@import "partials/price";
 @import "partials/footer";
 @import "partials/header";
     
@@ -17,6 +18,9 @@ header {
     color: $white;
 }
 
+table {
+    font-size: $font-s;
+}
 
 div {
     margin: 0;
@@ -37,6 +41,11 @@ h2 {
 h3 {
     font-family: $sans-serif;
     font-size: $font-m;
+}
+
+h4 {
+    font-family: $sans-serif;
+    font-size: $font-s;
 }
 
 nav {
@@ -109,6 +118,10 @@ li {
 @include screen-max($tablet){
     .op {
         border-radius: 0;
+        opacity: 1;
+        p{
+            @include text-shadow;
+        }
     }
 }
 

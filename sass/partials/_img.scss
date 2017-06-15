@@ -16,12 +16,23 @@
     background: url('../images/office-480px.jpg') no-repeat center;
     overflow: hidden;
 }
+.header-nav-img.price {
+    background-image: url('../images/flower6.jpg');
+}
+
+.header-nav-img.contact {
+    background-image: url('../images/flower5.jpg');
+}
 
 .header-nav-img {
-    background-image: url('../images/flower4.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
     background-attachment: fixed;
 }
 
+@for $i from 1 through 4 {
+    .packages-div-#{$i}{
+        background: url('../images/flower#{$i}.jpg') center;
+    }
+}

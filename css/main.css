@@ -15,12 +15,29 @@
   background: url("../images/office-480px.jpg") no-repeat center;
   overflow: hidden; }
 
+.header-nav-img.price {
+  background-image: url("../images/flower6.jpg"); }
+
+.header-nav-img.contact {
+  background-image: url("../images/flower5.jpg"); }
+
 .header-nav-img {
-  background-image: url("../images/flower4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
   background-attachment: fixed; }
+
+.packages-div-1 {
+  background: url("../images/flower1.jpg") center; }
+
+.packages-div-2 {
+  background: url("../images/flower2.jpg") center; }
+
+.packages-div-3 {
+  background: url("../images/flower3.jpg") center; }
+
+.packages-div-4 {
+  background: url("../images/flower4.jpg") center; }
 
 /*======================
    NAVIGATION MENU
@@ -77,6 +94,156 @@ nav {
     transition: all 0.3s ease-in-out;
     transform: rotateX(0);
     background: rgba(154, 212, 128, 0.8); } }
+
+.packages-div-1, .packages-op {
+  height: 30rem; }
+
+.packages-div-1 {
+  position: relative;
+  z-index: 1;
+  overflow: hidden; }
+  .packages-div-1 h4 {
+    margin-top: 7em;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0.5px 0.5px 1px black;
+    z-index: 15; }
+    @media screen and (max-width: 960px) {
+      .packages-div-1 h4 {
+        margin-top: 3em;
+        position: relative;
+        z-index: 20;
+        color: black;
+        text-shadow: 0.5px 0.5px 1px white; } }
+
+.packages-div-1:hover .packages-op {
+  opacity: 1;
+  transition: opacity .5s ease-in-out; }
+
+.packages-div-1:hover h4 {
+  opacity: 0; }
+
+@media screen and (max-width: 960px) {
+  .packages-div-1:hover h4 {
+    opacity: 1; } }
+
+.packages-div-2, .packages-op {
+  height: 30rem; }
+
+.packages-div-2 {
+  position: relative;
+  z-index: 1;
+  overflow: hidden; }
+  .packages-div-2 h4 {
+    margin-top: 7em;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0.5px 0.5px 1px black;
+    z-index: 15; }
+    @media screen and (max-width: 960px) {
+      .packages-div-2 h4 {
+        margin-top: 3em;
+        position: relative;
+        z-index: 20;
+        color: black;
+        text-shadow: 0.5px 0.5px 1px white; } }
+
+.packages-div-2:hover .packages-op {
+  opacity: 1;
+  transition: opacity .5s ease-in-out; }
+
+.packages-div-2:hover h4 {
+  opacity: 0; }
+
+@media screen and (max-width: 960px) {
+  .packages-div-2:hover h4 {
+    opacity: 1; } }
+
+.packages-div-3, .packages-op {
+  height: 30rem; }
+
+.packages-div-3 {
+  position: relative;
+  z-index: 1;
+  overflow: hidden; }
+  .packages-div-3 h4 {
+    margin-top: 7em;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0.5px 0.5px 1px black;
+    z-index: 15; }
+    @media screen and (max-width: 960px) {
+      .packages-div-3 h4 {
+        margin-top: 3em;
+        position: relative;
+        z-index: 20;
+        color: black;
+        text-shadow: 0.5px 0.5px 1px white; } }
+
+.packages-div-3:hover .packages-op {
+  opacity: 1;
+  transition: opacity .5s ease-in-out; }
+
+.packages-div-3:hover h4 {
+  opacity: 0; }
+
+@media screen and (max-width: 960px) {
+  .packages-div-3:hover h4 {
+    opacity: 1; } }
+
+.packages-div-4, .packages-op {
+  height: 30rem; }
+
+.packages-div-4 {
+  position: relative;
+  z-index: 1;
+  overflow: hidden; }
+  .packages-div-4 h4 {
+    margin-top: 7em;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0.5px 0.5px 1px black;
+    z-index: 15; }
+    @media screen and (max-width: 960px) {
+      .packages-div-4 h4 {
+        margin-top: 3em;
+        position: relative;
+        z-index: 20;
+        color: black;
+        text-shadow: 0.5px 0.5px 1px white; } }
+
+.packages-div-4:hover .packages-op {
+  opacity: 1;
+  transition: opacity .5s ease-in-out; }
+
+.packages-div-4:hover h4 {
+  opacity: 0; }
+
+@media screen and (max-width: 960px) {
+  .packages-div-4:hover h4 {
+    opacity: 1; } }
+
+.packages-op {
+  background: rgba(154, 212, 128, 0.9);
+  z-index: 5;
+  position: relative;
+  bottom: 27.1em;
+  opacity: 0; }
+  .packages-op p {
+    font-size: 1.8rem;
+    z-index: 10;
+    padding: 2em 1em;
+    line-height: 2.4rem;
+    color: #fff;
+    text-shadow: 0.5px 0.5px 1px black; }
+
+@media screen and (max-width: 960px) {
+  .packages-op {
+    opacity: 1;
+    background: rgba(154, 212, 128, 0.6);
+    bottom: 15.6em; }
+    .packages-op p {
+      padding-top: 5em; } }
 
 /*======================
    FOOTER
@@ -142,6 +309,9 @@ html, body, .index-header {
 header {
   color: #fff; }
 
+table {
+  font-size: 1.8rem; }
+
 div {
   margin: 0; }
 
@@ -158,6 +328,10 @@ h2 {
 h3 {
   font-family: "Dosis", sans-serif;
   font-size: 2.4rem; }
+
+h4 {
+  font-family: "Dosis", sans-serif;
+  font-size: 1.8rem; }
 
 nav {
   position: absolute;
@@ -215,7 +389,10 @@ li {
 
 @media screen and (max-width: 960px) {
   .op {
-    border-radius: 0; } }
+    border-radius: 0;
+    opacity: 1; }
+    .op p {
+      text-shadow: 0.5px 0.5px 1px black; } }
 
 .section-title {
   font-size: 2.4rem;
