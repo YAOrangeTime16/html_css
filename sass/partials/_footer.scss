@@ -5,16 +5,14 @@
 footer {
     text-align: center;
     background-color: $main-color;
-    height: 7rem;
-    line-height: 7rem;
     font-size: $font-s;
     color: $dark-green;
+    line-height: 3em;
     margin: 0;
 }
 
 @include screen-max($tablet){
     footer {
-        height: auto;
         font-size: 1.2rem;
     }
 }

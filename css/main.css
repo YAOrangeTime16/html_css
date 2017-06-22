@@ -21,6 +21,9 @@
 .header-nav-img.contact {
   background-image: url("../images/flower5.jpg"); }
 
+.header-nav-img.about {
+  background-image: url("../images/flower8.jpg"); }
+
 .header-nav-img {
   background-repeat: no-repeat;
   background-size: cover;
@@ -118,7 +121,7 @@ nav {
 
 .packages-div-1:hover .packages-op {
   opacity: 1;
-  transition: opacity .5s ease-in-out; }
+  transition: opacity .4s ease-in-out; }
 
 .packages-div-1:hover h4 {
   opacity: 0; }
@@ -150,7 +153,7 @@ nav {
 
 .packages-div-2:hover .packages-op {
   opacity: 1;
-  transition: opacity .5s ease-in-out; }
+  transition: opacity .4s ease-in-out; }
 
 .packages-div-2:hover h4 {
   opacity: 0; }
@@ -182,7 +185,7 @@ nav {
 
 .packages-div-3:hover .packages-op {
   opacity: 1;
-  transition: opacity .5s ease-in-out; }
+  transition: opacity .4s ease-in-out; }
 
 .packages-div-3:hover h4 {
   opacity: 0; }
@@ -214,7 +217,7 @@ nav {
 
 .packages-div-4:hover .packages-op {
   opacity: 1;
-  transition: opacity .5s ease-in-out; }
+  transition: opacity .4s ease-in-out; }
 
 .packages-div-4:hover h4 {
   opacity: 0; }
@@ -245,21 +248,22 @@ nav {
     .packages-op p {
       padding-top: 5em; } }
 
+.price-list > div {
+  font-size: 1.8rem; }
+
 /*======================
    FOOTER
 ========================*/
 footer {
   text-align: center;
   background-color: #9ad480;
-  height: 7rem;
-  line-height: 7rem;
   font-size: 1.8rem;
   color: #002400;
+  line-height: 3em;
   margin: 0; }
 
 @media screen and (max-width: 960px) {
   footer {
-    height: auto;
     font-size: 1.2rem; } }
 
 /*======================

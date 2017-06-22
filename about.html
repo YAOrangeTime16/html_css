@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html>
-     <head lang="en">
-        <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1" charset="utf-8" />
-    <!-- CSS style -->
-        <link href="main.css" rel="stylesheet" >
-    <!-- Font -->
-        <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-    <!-- Favicon -->
-        <link href="images/plantify_logo.png" rel="shortcut icon">
-        <title>Plantify | Keep your workplace fresh and oxygenated</title>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Plantify || HTML / CSS </title>
+        <link rel="stylesheet" href="css/normalize.css" type="text/css">
+        <link rel="stylesheet" href="css/main.css" type="text/css">
+        <!-- Waffle Grid -->
+        <link rel="stylesheet" href="css/waffle-grid.min.css" type="text/css">
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Alice|Dosis:300,400,500" rel="stylesheet">
     </head>
     <body>
         <header>
-            <h1>
-            <img class="logo" src="images/plantify_logo.png" alt="logo" />Plantify
-            </h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="plant_themes.html">Plant themes</a></li>
-                    <li><a href="pricing.html">Pricing</a></li>
+           <nav>
+                <ul class="menu-nav hover-show">
+                    <li class="mobile-menu" ontouchstart="">MENU</li>
+                    <li class="hide mobile-menu-sub"><a class="anc-menu" href="index.html">HOME</a></li>
+                    <li class="hide mobile-menu-sub"><a class="anc-menu" href="price.html">THEMES &amp; PRICE</a></li>
+                    <li class="hide mobile-menu-sub"><a class="anc-menu" href="about.html">ABOUT</a></li>
+                    <li class="hide mobile-menu-sub"><a class="anc-menu" href="contact.html">CONTACT</a></li>
+                    
                 </ul>
             </nav>
+           <div class="head header-nav-img about"></div>
+           <h2 class="page-title">About Us</h2>
         </header>
+        <main>
             <section class="body-backg">
                 <h2>About Us</h2>
                 <p>Since started in Stockholm in 2016 by Steffe Stickling and Petronella, just Petronella, Plantify has revolutionized the way you think about plants in an office environment.
@@ -31,11 +34,9 @@
                 Plantify isn't just a delivery service for plants, it's a delivery service for new ideas. <br><br>
                 Plantify makes it easy to keep your workplace fresh and oxygenated. A workplace that is alive and create ideas that live on.</p>
             </section>
+        </main>
         <footer>
-            <ul>
-                <li>About Us</li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            Responsive Design/HTMLandCSS course: YA 2016
         </footer>
     </body>
 </html>
