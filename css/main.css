@@ -251,6 +251,14 @@ nav {
 .price-list > div {
   font-size: 1.8rem; }
 
+form {
+  font-size: 2.4rem; }
+
+input:not([type="submit"]) {
+  border: none;
+  border-bottom: 0.5px solid #969696;
+  padding-left: 1%; }
+
 /*======================
    FOOTER
 ========================*/
@@ -260,7 +268,7 @@ footer {
   font-size: 1.8rem;
   color: #002400;
   line-height: 3em;
-  margin: 0; }
+  margin: 5rem 0 0 0; }
 
 @media screen and (max-width: 960px) {
   footer {
@@ -329,9 +337,12 @@ h2 {
   font-size: 3.6rem;
   font-weight: 300; }
 
-h3 {
+h3, p {
   font-family: "Dosis", sans-serif;
   font-size: 2.4rem; }
+
+p {
+  line-height: 3.2rem; }
 
 h4 {
   font-family: "Dosis", sans-serif;

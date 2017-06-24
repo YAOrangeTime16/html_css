@@ -6,6 +6,8 @@
         <title>Plantify || HTML / CSS </title>
         <link rel="stylesheet" href="css/normalize.css" type="text/css">
         <link rel="stylesheet" href="css/main.css" type="text/css">
+        <!-- Waffle Grid -->
+        <link rel="stylesheet" href="css/waffle-grid.min.css" type="text/css">
         <!-- Google Font -->
         <link href="https://fonts.googleapis.com/css?family=Alice|Dosis:300,400,500" rel="stylesheet">
     </head>
@@ -25,44 +27,47 @@
             <h2 class="page-title">Contact Information</h2>
         </header>
         <main>
-            <section>
-                <h2>Address</h2>
-                <p>
-                    Birger Jarlsgatan 5000<br>
-                    Stockholm<br>
-                    Tel: 08-13371337<br>
-                </p>
-                <figure>
-                    <figcaption>Follow us on:</figcaption>
-                    <img class="sns-icon" src="images/sns_facebook.png" alt="facebook"/>
-                    <img class="sns-icon" src="images/sns_twitter.png" alt="twitter"/>
-                </figure>
-                <form>
-                    <ul>
-                        <li>
-                            <label><input type="radio" name="gender"/>Mr.</label>
-                            <label><input type="radio" name="gender"/>Ms.</label>
-                        </li>
-                        <li class="name">
-                            <label>Your Name</label>
-                            <input type="text" placeholder="First name"/>
-                       
-                            <input type="text" placeholder="Last name" />
-                        </li>
-                        <li  class="name">
-                            <label>Telephone</label>
-                            <input type="tel" placeholder="+46 8xxx"/>
-                        </li>
-                        <li>
-                            <label  class="name">Email</label>
-                            <input type="email" placeholder="name@domain.com"/>
-                        </li>
-                        <li>
-                            <label class="inquiry">Inquiry</label><textarea cols="50" rows="5" class="text-box"></textarea>
-                        </li>
-                        <li><input type="submit"/></li>
-                    </ul>
-                </form>
+            <section class="grid">
+                <div class="row">
+                    <div class="col col-8-of-12 col-s-6-of-6">
+                        <form>
+                        <h2>Inqury</h2>
+                            <div class="row">
+                                <div class="col col-3-of-8 col-s-6-of-6">
+                                    <label class="form">
+                                    <input type="radio" name="gender"/>Mr.
+                                    </label>
+                                    <label>
+                                    <input type="radio" name="gender"/>Ms.
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <input type="text" placeholder="First name" class="col col-4-of-8 col-s-6-of-6"/>
+                                <input type="text" placeholder="Last name" class="col col-4-of-8 col-s-6-of-6"/>
+                            </div>
+                            <div class="row">
+                                <input type="tel" placeholder="telephone number" class="col col-4-of-8 col-s-6-of-6"/>
+                                <input type="email" placeholder="email address" class="col col-4-of-8 col-s-6-of-6"/>
+                            </div>
+                            <div class="row">
+                                <textarea cols="50" rows="5" class="text-box col col-8-of-8 col-s-6-of-6"></textarea>
+                            </div>
+                            <div class="row">
+                                <input type="submit" class="col col-2-of-8 col-s-6-of-6"/>
+                            </div>                      
+                        </form>
+                    </div>
+                    
+                    <div class="col col-4-of-12 col-s-6-of-6">
+                        <h2>Address</h2>
+                        <p class="">
+                            Birger Jarlsgatan 5000<br>
+                            Stockholm<br>
+                            Tel: 08-13371337<br>
+                        </p> 
+                    </div>
+                </div>
             </section>    
         </main>
         <footer>
